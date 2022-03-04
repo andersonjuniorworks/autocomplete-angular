@@ -1,0 +1,10 @@
+<div class="form-group">
+
+    <label [for]="inputName">{{labelName}}</label>
+    <input [attr.list]="listName" [name]="inputName" [id]="inputName" [(ngModel)]="selected" (ngModelChange)="onChange()">
+
+    <datalist [id]="listName">
+      <option *ngFor="let item of list" [value]="item.nome">
+	  </datalist>
+
+</div>
